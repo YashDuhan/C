@@ -1,0 +1,7 @@
+--> Learn PMI Before doing recursion 
+--> then revise functions once again to get a better understanding 
+--> then do bubble and merge sort operations in arrays
+
+
+Recursion -- To be specific it means to call a function in it's functions 
+for reference head on to ./factorial.cpp
