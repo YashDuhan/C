@@ -11,7 +11,7 @@ public:
         a = x;
         b = y;
     }
-    
+
     complex(int x)
     {
         a = x;
@@ -25,12 +25,12 @@ public:
     }
     void printNumber()
     {
-        cout<<"Your number is "<<a <<" + "<<b<<"i"<<endl;
+        cout << "Your number is " << a << " + " << b << "i" << endl;
     }
 };
 int main()
 {
-    complex c1(4,6);
+    complex c1(4, 6);
     c1.printNumber();
 
     complex c2(5);

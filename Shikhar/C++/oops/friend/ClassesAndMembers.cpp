@@ -24,6 +24,7 @@ class complex
 
     // istead of declaring each function we can declare the calculator class as its friend
     friend class calculator;
+
 public:
     void setNumber(int n1, int n2)
     {
