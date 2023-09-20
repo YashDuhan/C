@@ -1,17 +1,32 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Base
 {
-    int a,b;
+protected: // it is like private but can be inherited
+    int a;
+
+private:
+    int b;
 };
 
-class Derived
+/*
+
+For a protected member: 
+                        ||    Public Derivation ||   Private derivation ||   Protected Derivation
+    ====================||======================||======================||=========================
+    1. Private members  ||  Not inherited       ||   Not inherited      ||   Not inherited
+    2. Protected members||  Protected           ||   Private            ||   Protected
+    3. Public members   ||  Public              ||   Private            ||   Protected
+
+*/
+
+class Derived: protected Base
+{
+};
+
+int main()
 {
 
-};
-
-int main(){
-    
     return 0;
 }
