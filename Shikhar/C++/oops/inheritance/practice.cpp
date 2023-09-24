@@ -11,6 +11,7 @@ create 2 classes:
     Q1. What  type of inheritance you are using?
     Q2. Which mode of inheritance are you using?
     Q3. Create an object of HybridCalculator and display results of simple and scientific calculator?
+    Q4. How ia code reusability implemented?
 */
 
 class SimpleCalculator
@@ -171,6 +172,8 @@ public:
         }
     }
 };
+
+
 int main()
 {
     int input;
