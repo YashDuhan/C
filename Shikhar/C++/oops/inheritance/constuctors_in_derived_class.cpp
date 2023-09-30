@@ -69,7 +69,7 @@ public:
 };
 int main()
 {
-    Derived harry(1, 2, 3, 4);
+    Derived harry(1, 2, 3, 4); 
     /* output
 
     Base1 class constructor called   
