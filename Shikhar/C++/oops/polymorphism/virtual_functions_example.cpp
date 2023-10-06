@@ -13,10 +13,7 @@ public:
         title = s;
         rating = r;
     }
-    virtual void display()
-    {
-
-    }
+    virtual void display(){}
 };
 
 class CWH_video: public CWH
