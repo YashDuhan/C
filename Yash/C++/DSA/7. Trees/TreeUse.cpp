@@ -3,7 +3,9 @@
 #include "TreeNode.h"
 using namespace std;
 
-TreeNode<int>* takeInput()
+//takeInput() function of this code can cause confusion use the code written in takeInputLevelWise.cpp
+
+TreeNode<int>* takeInput() //TakeInput with Recursion
 {
     int rootData;
     cout<<"Enter data : "<<endl;
@@ -49,7 +51,7 @@ int main()
     TreeNode<int>* node2 = new TreeNode<int>(3);
     root->children.push_back(node1);
     root->children.push_back(node2);
-     */
+    */
     TreeNode<int>*root = takeInput();
     printTree(root);
 

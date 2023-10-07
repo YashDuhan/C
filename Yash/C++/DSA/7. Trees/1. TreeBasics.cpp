@@ -2,13 +2,17 @@
 #include <vector>
 using namespace std;
 
+//in trees each vectornode has separate vector node inside it
+//e.g assume this a vector {1:{4:{},5:{1:{2:{}}}}, 2:{}, 3:{},} 
+//each vector is having a separate vector inside it
+
 class TreeNode 
 {
     public:
     int data;
     vector <TreeNode *> children; //created a vector of children type
 
-    //constructor
+    //constructor to directly add values
     TreeNode(int data)
     {
         this->data = data;
@@ -33,7 +37,26 @@ int main()
     node2->children.push_back(node5);
     node2->children.push_back(node6);
 
+
     /*
+    Here this Tree will look something like {100:{20{21:{},22:{}}:,30:{31:{},32:{}}}}
+        
+        OR
+      
+        {
+            100:
+                {
+                    20:
+                        {21:{},22:{}},
+            
+                    30:
+                        {31:{},32:{}}
+                }
+        }
+
+
+    .                         Visual Representation of this Tree
+
     .                                   100(root)
     .                                 /          \
     .                                /            \
