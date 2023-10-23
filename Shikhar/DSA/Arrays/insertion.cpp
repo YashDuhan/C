@@ -35,7 +35,7 @@ public:
         if (used_size >= total_size)
         {
             cout<<"Value can't be inserted"<<endl;
-            exit;
+            return;
         }
         used_size = used_size+1;
         for(int i=used_size-1; i>index; i--)    //shifting from backwards
