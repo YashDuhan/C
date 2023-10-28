@@ -144,7 +144,7 @@ int main(){
     head = deleteAtFirst(head);
     printLinkedList(head);
 
-    // deletion at the beginning of the linked list
+    // deletion at the end of the linked list
     cout<<endl<<"Your linked list after deleting a node at the last of the linked list : "<<endl;
     deleteAtLast(head);
     printLinkedList(head);
