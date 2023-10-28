@@ -26,7 +26,7 @@ Node *buildTree(Node *root)
 
     if(data == -1)
     {
-        return NULL;
+        return NULL; //if the user entered -1 as the data then the function will end automatically
     }
 
     cout << "Enter data to be inserted in left of : " << data <<  endl;
