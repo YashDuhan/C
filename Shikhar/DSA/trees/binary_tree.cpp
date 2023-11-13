@@ -26,9 +26,9 @@ node *buildBinaryTree()
     }
     node *root = new node(data);
     cout<<"Enter data to be inserted to the left of "<<data<<" => "<<endl;
-    root->left = buildTree(); 
+    root->left = buildBinaryTree(); 
     cout<<"Enter data to be inserted to the right of "<<data<<" => "<<endl;
-    root->right = buildTree();
+    root->right = buildBinaryTree();
 
     return root;
 }
@@ -64,7 +64,7 @@ void printTree_3(node *root) //Post-order traversal
 }
 int main()
 {
-    node * root = buildTree();
+    node * root = buildBinaryTree();
     cout<<endl<<endl<<"The elements of tree(In-order taversal) are: "<<endl;
     printTree_1(root);
     cout<<endl<<endl<<"The elements of tree(Pre-order taversal) are: "<<endl;
