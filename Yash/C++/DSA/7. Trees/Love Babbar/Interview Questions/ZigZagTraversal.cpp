@@ -14,7 +14,7 @@ In this binary tree we will first print the tree from left to right level wise
 then we will print the tree from right to left level wise
 and we will repeat the steps for all other traversals
 
-so output will be 
+so output will be
 1 (left to right)
 4 2 (right to left)
 3 5 6 (left to right)
