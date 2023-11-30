@@ -59,7 +59,7 @@ Step 2: Print the extreme left subtree
 Step 3: Print the extreme right subtree
 
 
-So, Now the Answer is 1 2 4 5 3  6 5
+So, Now the Answer is 1 2 4 5 3  6 7
 .                     ^ ^ ^ ^ ^  ^ ^
 .                   Ro Ro L R Ro L R
 
@@ -80,7 +80,7 @@ So, Now the Answer is 4 5 2  6 7 3  1
 
 
 For BFS:
-It's als0 known as Level Wise Traversal 
+It's also known as Level Wise Traversal 
 
 .            1              ---------- Level 0(L0)
 .          /   \
