@@ -26,7 +26,7 @@ Node *createBinaryTree()
 .          /   \
 .         2     3
 .        / \   / \ 
-.       4  5  6  7
+.       4  5  6   7
 */
     Node *root = new Node(1);           //Level 0
     root->left = new Node(2);           //Level 1
