@@ -79,7 +79,7 @@ int KnapSack(Item arr[], int N , int capacity)
 
     if(dp[N][capacity] != -1)
     {
-        return dp[N][capacity]
+        return dp[N][capacity];
     }
 
     //checking from the last index
