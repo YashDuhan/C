@@ -12,8 +12,7 @@
             return dp[N][capacity];
         }
 
-    This will avoid any extra computations and If the answer is already present in the matrix, we will just
-    return it
+    This will avoid any extra computations and If the answer is already present in the matrix, we will just return it
 */
 
 #include <iostream>
