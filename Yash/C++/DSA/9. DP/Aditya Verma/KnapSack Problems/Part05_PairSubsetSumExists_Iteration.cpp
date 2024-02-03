@@ -35,10 +35,9 @@ int main()
     for(int i = 0; i< result.size();i++)
     {
         cout << "Pair " << i+1 << " is : ";
-        for(int j = 0; j< result[i].size();j++)
-        {
+        for (int j = 0; j < result[i].size(); j++)
             cout << result[i][j] << " , ";
-        }
+
         cout << endl;
     }
 }
