@@ -1,3 +1,7 @@
+#Files
 *.exe
-*.vscode
 tempCodeRunnerFile.cpp
+
+#Folders
+*.vscode
+*.idea
