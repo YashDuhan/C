@@ -58,15 +58,15 @@ class Item
 
 bool compare(Item a, Item b)
 {
-    double r1 = static_cast<double>(a.value/a.weight);
-    double r2 = static_cast<double>(b.value/b.weight);
+    double r1 = static_cast<double>(a.value)/a.weight;
+    double r2 = static_cast<double>(b.value)/b.weight;
     return r1 > r2;
 }
 
 double KnapSack(Item arr[], int N, int capacity)
 {
     sort(arr, arr+N, compare); //This line is used to sort the array in descending order; the compare is acting as a comparator and it will decide how the array will be sorted
-    double maxProfit;
+    double maxProfit = 0.00;
     for(int i = 0; i< N; i++)
     {
         if(arr[i].weight <= capacity)
@@ -76,7 +76,7 @@ double KnapSack(Item arr[], int N, int capacity)
         }
         else
         {
-            maxProfit = maxProfit + arr[i].value *(capacity/arr[i].weight);
+            maxProfit += arr[i].value *(static_cast<double>(capacity)/arr[i].weight);
         }
     }
     return maxProfit;
@@ -84,7 +84,7 @@ double KnapSack(Item arr[], int N, int capacity)
 
 int main()
 {
-    Item arr[] = {{1,10},{2,20},{3,30},{4,40}}; //Array of objects
+    Item arr[] = {{1,20},{2,30},{3,50},{4,30}}; //Array of objects
     int N = sizeof(arr)/sizeof(arr[0]); //size of the array arr
     int capacity;
     cout << "Enter the capacity of KnapSack : ";
